@@ -176,7 +176,7 @@ public class Tuples {
     }
 
     public static <K, V> Map<K, V> toMap(Iterable<Tuple2<K, V>> tuples) {
-        final Literals.MapBuilder<K, V> m = Literals.map();
+        final NewCollection.MapBuilder<K, V> m = NewCollection.map();
         for (Tuples.Tuple2<K, V> e : tuples)
             m.map(e._1, e._2);
         return m;

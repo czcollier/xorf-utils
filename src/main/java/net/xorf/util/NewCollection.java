@@ -2,10 +2,10 @@ package net.xorf.util;
 
 import java.util.*;
 
-public final class Literals {
+public final class NewCollection {
 
     public static <T> List<T> nil() {
-        return Literals.list();
+        return NewCollection.list();
     }
     
 	public static <T> FluentList<T> list() {
